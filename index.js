@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
+app.use("/produtos", produtoRoutes)
 
 const produtos = [
   { id: 1, nome: "Notebook", preco: 3500 },
