@@ -1,8 +1,9 @@
 const express = require("express");
+const produtoRoutes = require("./src/routes/produto.routes");
 const app = express();
 
 app.use(express.json());
-app.use("/produtos", produtoRoutes)
+app.use("/produto", produtoRoutes)
 
 const produtos = [
   { id: 1, nome: "Notebook", preco: 3500 },
@@ -10,3 +11,4 @@ const produtos = [
 ];
 
 app.listen(3000);
+

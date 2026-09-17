@@ -1,4 +1,4 @@
-const service = require(" .. /services/produto.service");
+const service = require("../services/produto.service");
 
 exports.listar = (req, res) => {
     const produtos = service.listar();
