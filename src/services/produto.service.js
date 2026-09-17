@@ -1,14 +1,14 @@
-const produtos = [
-    { id: 1, nome: "Notebook", preco: 3500 },
-    { id: 2, nome: "Mouse", preco: 120 }
-];
+const Produto =
+    require("../models/produto.model");
+
+const produto = new Produto();
 
 function listar() {
-    return produtos;
+    return produto;
 }
 
 function buscarPorId(id) {
-    return produtos.find(p => p.id === Number(id));
+    return produto.find(p => p.id === Number(id));
 }
 
 function criar(dados) {
